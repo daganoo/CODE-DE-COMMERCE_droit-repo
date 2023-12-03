@@ -6,9 +6,12 @@
     <link rel="icon" href="logoP.png" type="image/x-icon">
   </head>
   <body>
-    <a href="pn.html">pn</a><br>
-    <a href="cons.html">cons</a><br>
-    <a href="cm.html">cm</a><br>
+    <div style="margin-top: 85px;">
+      <a href="pn.html"><button>pn</button></a><br>
+      <a href="cons.html"><button>cons</button></a><br>
+      <a href="cm.html"><button>cm</button></a><br>
+    </div>
+    
 
     <ul id="maListe">
       <li id="a1">
@@ -6716,8 +6719,9 @@ bancaire ou d'un établissement assimilé.
   
   .card {
     margin: 20px auto;
+    margin-bottom: -100px;
     padding: 20px;
-    width: 350px;
+    width: 450px;
     min-height: 290px;
     display: grid;
     grid-template-rows: 20px 50px 1fr 50px;
@@ -6806,19 +6810,20 @@ bancaire ou d'un établissement assimilé.
     background-position: center;
     background-repeat: no-repeat;
   }
-
   body::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -100px;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.65); /* Adjust the alpha value for darkness */
-    z-index: -1; /* Place the pseudo-element behind the content */
+    background: rgba(0, 0, 0, 0.65);
+    z-index: -1; 
   }
-
   button {
+    color: #fff;
+    width: 150px;
+    padding: 10px;
     position: relative;
     margin: auto;
     bottom: 20px;
@@ -6833,6 +6838,7 @@ bancaire ou d'un établissement assimilé.
     overflow: hidden;
     border: none;
   }
+  
 
   button:after {
     content: " ";
@@ -6842,12 +6848,15 @@ bancaire ou d'un établissement assimilé.
     position: absolute;
     transition: all 0.4s ease-in-out;
     right: 0;
+    
+    
   }
 
   button:hover::after {
     right: auto;
     left: 0;
     width: 100%;
+
   }
 
   button span {
@@ -6883,12 +6892,16 @@ bancaire ou d'un établissement assimilé.
   }
   #inp {
     margin: 20px;
-    margin-top: 190px;
+    margin-top: 25px;
     padding: 9px;
     border-radius: 25px;
     border: 2px solid #183153;
     color: #fff;
-    font-size: 21;
+    font-size: 16;
     background-color: transparent;
   }
+  a{
+    text-decoration: none;
+  }
+  
 </style>

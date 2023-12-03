@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
- <div>
-  <a href="pn.html">pn</a><br>
-  <a href="cons.html">cons</a><br>
-  <a href="cm.html">cm</a><br>
- </div>
+  <div style="margin-top: 85px;">
+    <a href="pn.html"><button>pn</button></a><br>
+    <a href="cons.html"><button>cons</button></a><br>
+    <a href="cm.html"><button>cm</button></a><br>
+  </div>
 
     <ul id="maListe">
         <li id="1">Article 1 :La loi pénale détermine et constitue en infractions les faits de
@@ -4107,8 +4107,9 @@
   
   .card {
     margin: 20px auto;
+    margin-bottom: -100px;
     padding: 20px;
-    width: 350px;
+    width: 450px;
     min-height: 290px;
     display: grid;
     grid-template-rows: 20px 50px 1fr 50px;
@@ -4201,7 +4202,7 @@
   body::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -100px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -4210,7 +4211,10 @@
   }
 
   button {
+    color: #fff;
     position: relative;
+    width: 150px;
+    padding: 10px;
     margin: auto;
     bottom: 20px;
     margin-top: 15px;
@@ -4274,12 +4278,15 @@
   }
   #inp {
     margin: 20px;
-    margin-top: 190px;
+    margin-top: 25px;
     padding: 9px;
     border-radius: 25px;
     border: 2px solid #183153;
     color: #fff;
     font-size: 21;
     background-color: transparent;
+  }
+  a{
+    text-decoration: none;
   }
 </style>
