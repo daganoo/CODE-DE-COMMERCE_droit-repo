@@ -6715,9 +6715,7 @@ bancaire ou d'un établissement assimilé.
     height: 1px;
     background-color: #7a7a7a;
 }
-
-  
-  .card {
+.card {
     margin: 20px auto;
     margin-bottom: -100px;
     padding: 20px;
@@ -6728,13 +6726,13 @@ bancaire ou d'un établissement assimilé.
     border-radius: 18px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.2s;
+    width: 290px;
   }
 
   .card:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
     transform: scale(1.01);
   }
-
   .card__link,
   .card__exit,
   .card__icon {
@@ -6767,31 +6765,26 @@ bancaire ou d'un établissement assimilé.
     justify-self: end;
   }
 
-  .card__icon {
-    grid-row: 2/3;
-    font-size: 30px;
-  }
 
   .card__title {
     grid-row: 3/4;
     font-weight: 400;
     color: #ffffff;
   }
-
   .card__apply {
     grid-row: 4/5;
     align-self: center;
   }
-
   .card-5 {
     background: radial-gradient(#183153, #183153);
   }
-
   @media (max-width: 1600px) {
     .cards {
       justify-content: center;
     }
   }
+
+  
 
   #maListe {
     display: none;
